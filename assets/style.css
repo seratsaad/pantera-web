@@ -134,7 +134,7 @@ ul.tight li{margin:.4em 0;color:#cfd4dc}
 .star-sm{width:16px;height:16px;vertical-align:-2px;margin-right:8px}
 
 /* ---- paper screenshot ---- */
-.paper-shot{width:100%;max-width:860px;height:auto;display:block;margin:0 auto;
+.paper-shot{width:100%;max-width:600px;height:auto;display:block;margin:0 auto;
   background:#fff;border:1px solid var(--line);border-radius:8px;
   box-shadow:0 12px 44px rgba(0,0,0,.55);transition:.2s}
 a:hover>.paper-shot{box-shadow:0 12px 52px rgba(205,127,50,.25);border-color:rgba(205,127,50,.4)}
