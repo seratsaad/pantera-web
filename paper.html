@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper I — PANTERA</title>
+<meta name="description" content="PANTERA I: Hunting for the Most Metal-Rich Stars in the Solar Neighborhood with High-Resolution Spectroscopy.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="stars"></div><div class="glow"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ff2d2d"/><stop offset="20%" stop-color="#ff9b1e"/>
+    <stop offset="40%" stop-color="#ffe11e"/><stop offset="58%" stop-color="#3fd14a"/>
+    <stop offset="78%" stop-color="#2b8bff"/><stop offset="100%" stop-color="#8b3bff"/>
+  </linearGradient>
+  <g id="starshape">
+    <path d="M32 0 L37 27 L64 32 L37 37 L32 64 L27 37 L0 32 L27 27 Z"/>
+    <path d="M32 8 L34.5 29.5 L56 32 L34.5 34.5 L32 56 L29.5 34.5 L8 32 L29.5 29.5 Z" opacity=".55"/>
+  </g>
+</defs></svg>
+
+<nav><div class="wrap">
+  <a class="brand" href="index.html">PANTERA</a>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="survey.html">The Survey</a>
+    <a href="sample.html">Sample</a>
+    <a href="paper.html" class="active">Paper&nbsp;I</a>
+    <a href="team.html">Team</a>
+  </div>
+</div></nav>
+
+<main>
+<div class="wrap">
+  <div class="pagehead">
+    <div class="kicker">Paper I</div>
+    <h1 class="page">Hunting for the Most Metal-Rich Stars in the Solar Neighborhood with High-Resolution Spectroscopy</h1>
+    <p class="lede">Saad, Rowan, Stanek, Ilyin, Fulton, Isaacson &amp; Lu</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="abstract">
+      <p>We present <b>PANTERA</b> (Project for Astrophysical Nucleosynthesis and Targeted Exploration of metal-Rich Abundances), a high-resolution spectroscopic survey of the most metal-rich stars in the solar neighborhood. In this first paper we report iron abundances for <b>56 metal-rich stars</b> selected from <i>Gaia</i> DR3 XP spectrophotometric metallicities, observed with PEPSI on the Large Binocular Telescope, the Levy spectrograph on the Automated Planet Finder, and HIRES on Keck. We measure [Fe/H] from an equivalent-width analysis of iron lines, with the effective temperature from photometry and the surface gravity from the <i>Gaia</i> parallax, and validate the measurements against benchmark stars, cross-instrument pairs, a second synthesis code, and an independent equivalent-width measurement.</p>
+      <p>We find that the <i>Gaia</i>-XP metallicities over-predict [Fe/H] for part of the sample: consistent for the dwarfs, but reaching <span class="accent mono">0.16&nbsp;±&nbsp;0.02&nbsp;dex</span> for the cool giants. We attribute the over-prediction in part to the strong blue line blanketing of the cool metal-rich giants and to the survey labels on which the XP metallicities were trained. We also find <b>25 of the 56 stars to be ultra-metal-rich</b> ([Fe/H]&nbsp;&gt;&nbsp;0.4), with the most iron-rich reaching <span class="accent mono">[Fe/H]&nbsp;=&nbsp;+0.58</span>. We discuss the implications for studying metal-rich populations.</p>
+    </div>
+    <p style="color:var(--faint);font-size:.92rem;margin-top:14px">Keywords: stellar abundances · metallicity · Galactic chemical evolution · high-resolution spectroscopy</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Data &amp; code</h2>
+    <p style="max-width:720px">Equivalent widths and atomic data for all 62 spectra, the adopted parameters and iron abundances, the six-dimensional kinematics with derived orbits, and the equivalent-width-cap sensitivity tables are public. Reduced spectra are available on request.</p>
+    <div class="links" style="margin-top:22px">
+      <a class="linkcard" href="https://github.com/seratsaad/pantera1">
+        <div class="t"><svg class="star-sm" viewBox="0 0 64 64"><use href="#starshape" fill="url(#rainbow)"/></svg>Data &amp; code repository</div>
+        <div class="d">github.com/seratsaad/pantera1 — tables, kinematics, and reproduction code for Paper&nbsp;I.</div>
+      </a>
+      <a class="linkcard" href="mailto:saad.104@osu.edu">
+        <div class="t"><svg class="star-sm" viewBox="0 0 64 64"><use href="#starshape" fill="url(#rainbow)"/></svg>Reduced spectra &amp; contact</div>
+        <div class="d">Serat Saad · saad.104@osu.edu — for reduced spectra and collaboration.</div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <svg class="star-sm" viewBox="0 0 64 64"><use href="#starshape" fill="url(#rainbow)"/></svg>
+  <div>PANTERA — Project for Astrophysical Nucleosynthesis and Targeted Exploration of metal-Rich Abundances</div>
+  <div style="margin-top:6px;color:#4b5563">The Ohio State University · <span class="yr"></span></div>
+</div></footer>
+<script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>

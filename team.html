@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team — PANTERA</title>
+<meta name="description" content="The people behind PANTERA.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="stars"></div><div class="glow"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ff2d2d"/><stop offset="20%" stop-color="#ff9b1e"/>
+    <stop offset="40%" stop-color="#ffe11e"/><stop offset="58%" stop-color="#3fd14a"/>
+    <stop offset="78%" stop-color="#2b8bff"/><stop offset="100%" stop-color="#8b3bff"/>
+  </linearGradient>
+  <g id="starshape">
+    <path d="M32 0 L37 27 L64 32 L37 37 L32 64 L27 37 L0 32 L27 27 Z"/>
+    <path d="M32 8 L34.5 29.5 L56 32 L34.5 34.5 L32 56 L29.5 34.5 L8 32 L29.5 29.5 Z" opacity=".55"/>
+  </g>
+</defs></svg>
+
+<nav><div class="wrap">
+  <a class="brand" href="index.html">PANTERA</a>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="survey.html">The Survey</a>
+    <a href="sample.html">Sample</a>
+    <a href="paper.html">Paper&nbsp;I</a>
+    <a href="team.html" class="active">Team</a>
+  </div>
+</div></nav>
+
+<main>
+<div class="wrap">
+  <div class="pagehead">
+    <div class="kicker">Team</div>
+    <h1 class="page">Collaborators</h1>
+    <p class="lede">PANTERA grew out of the ASAS-SN group at The Ohio State University.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="team">
+      <div class="member"><div class="nm">Serat Saad</div><div class="aff">The Ohio State University</div></div>
+      <div class="member"><div class="nm">Kris Stanek</div><div class="aff">The Ohio State University</div></div>
+      <div class="member"><div class="nm">Dom Rowan</div><div class="aff">UC Berkeley</div></div>
+    </div>
+    <p style="color:var(--dim);margin-top:26px">Interested in the survey or the reduced spectra? Get in touch: <a href="mailto:saad.104@osu.edu">saad.104@osu.edu</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <svg class="star-sm" viewBox="0 0 64 64"><use href="#starshape" fill="url(#rainbow)"/></svg>
+  <div>PANTERA — Project for Astrophysical Nucleosynthesis and Targeted Exploration of metal-Rich Abundances</div>
+  <div style="margin-top:6px;color:#4b5563">The Ohio State University · <span class="yr"></span></div>
+</div></footer>
+<script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>

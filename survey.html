@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Survey — PANTERA</title>
+<meta name="description" content="What PANTERA is: a high-resolution test of the Gaia-XP metal-rich scale in the solar neighborhood.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="stars"></div><div class="glow"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ff2d2d"/><stop offset="20%" stop-color="#ff9b1e"/>
+    <stop offset="40%" stop-color="#ffe11e"/><stop offset="58%" stop-color="#3fd14a"/>
+    <stop offset="78%" stop-color="#2b8bff"/><stop offset="100%" stop-color="#8b3bff"/>
+  </linearGradient>
+  <g id="starshape">
+    <path d="M32 0 L37 27 L64 32 L37 37 L32 64 L27 37 L0 32 L27 27 Z"/>
+    <path d="M32 8 L34.5 29.5 L56 32 L34.5 34.5 L32 56 L29.5 34.5 L8 32 L29.5 29.5 Z" opacity=".55"/>
+  </g>
+</defs></svg>
+
+<nav><div class="wrap">
+  <a class="brand" href="index.html">PANTERA</a>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="survey.html" class="active">The Survey</a>
+    <a href="sample.html">Sample</a>
+    <a href="paper.html">Paper&nbsp;I</a>
+    <a href="team.html">Team</a>
+  </div>
+</div></nav>
+
+<main>
+<div class="wrap">
+  <div class="pagehead">
+    <div class="kicker">The Survey</div>
+    <h1 class="page">A high-resolution census of extreme metallicity</h1>
+    <p class="lede">PANTERA is a spectroscopic program to find and understand the most metal-rich stars in the solar neighborhood — likely migrants from the inner Galaxy, tracers of the bar and of radial mixing, calibrators for stellar models, and prime targets for planet searches.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap grid g2">
+    <div>
+      <h2>Testing the metal-rich sky</h2>
+      <p><i>Gaia</i> DR3 delivers data-driven metallicities for ~175 million stars from XP spectrophotometry — but its metal-rich calibrators are few. We select candidates from those XP metallicities and observe them at high spectral resolution to measure accurate iron abundances and test the XP scale where it matters most: the metal-rich tail.</p>
+      <p>For the 56 stars observed so far, the XP metallicities agree with our measurements for the dwarfs but run high for the cool giants — a bias that has to be corrected before the XP metal-rich candidates can be trusted for studying the inner disk.</p>
+    </div>
+    <figure>
+      <img src="assets/fig_mdf.png" alt="Metallicity distribution of the PANTERA sample">
+      <figcaption>Metallicity distribution of all 56 targets: the <i>Gaia</i>-XP scale (grey) versus the high-resolution [Fe/H] measured here (black), split by evolutionary type at right. The dotted line marks the ultra-metal-rich threshold, [Fe/H]&nbsp;=&nbsp;+0.4.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid g2">
+    <figure>
+      <img src="assets/fig_offset.png" alt="Gaia-XP metallicity offset versus effective temperature">
+      <figcaption>The difference between our high-resolution [Fe/H] and the <i>Gaia</i>-XP [M/H], against effective temperature. The XP scale runs increasingly high toward the cool giants (right).</figcaption>
+    </figure>
+    <div>
+      <h2>Why extreme metallicity matters</h2>
+      <ul class="tight">
+        <li>Tracers of radial migration, the Galactic bar, and disk heating.</li>
+        <li>Calibrators for red-giant mass loss and enhanced-opacity stellar models.</li>
+        <li>A target list for radial-velocity planet searches, where the planet–metallicity relation is least constrained ([Fe/H]&nbsp;&gt;&nbsp;+0.3).</li>
+        <li>A direct check on the <i>Gaia</i>-XP metallicity scale at its high-metallicity end.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <svg class="star-sm" viewBox="0 0 64 64"><use href="#starshape" fill="url(#rainbow)"/></svg>
+  <div>PANTERA — Project for Astrophysical Nucleosynthesis and Targeted Exploration of metal-Rich Abundances</div>
+  <div style="margin-top:6px;color:#4b5563">The Ohio State University · <span class="yr"></span></div>
+</div></footer>
+<script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>
