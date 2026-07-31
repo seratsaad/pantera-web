@@ -106,7 +106,7 @@ p{color:#cfd4dc}
 .card p{font-size:.96rem;color:var(--dim);margin:.4em 0 0}
 
 figure{margin:0}
-figure.fig-narrow{max-width:540px;margin-inline:auto}
+figure.fig-narrow{max-width:430px;margin-inline:auto}
 figure img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);background:#fff;display:block}
 figcaption{font-family:'Spectral',serif;font-size:.85rem;color:var(--faint);margin-top:10px;line-height:1.5}
 
